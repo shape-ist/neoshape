@@ -14,7 +14,7 @@
 		{title}
 		{#if $page.path === to}
 			<div
-				class="bg-purple-500 h-1 w-1/3 rounded-full mt-1 m-auto transform -translate-y-1"
+				class="bg-gray-800 h-1 w-1/2 rounded-full mt-1 m-auto transform -translate-y-1"
 			/>
 		{/if}
 	</a>
