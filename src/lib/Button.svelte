@@ -1,4 +1,4 @@
-<script type="module">
+<script>
 	import { overrideTailwindClasses } from 'tailwind-override';
 	export let text = 'Button';
 	export let click = null;

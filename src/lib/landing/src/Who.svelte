@@ -1,6 +1,5 @@
-<script type="module">
+<script>
 	import Blob2 from './blob/Blob2.svelte';
-	import Title from './Title.svelte';
 </script>
 
 <div class="w-full flex items-center justify-center">
@@ -13,12 +12,20 @@
     w-full bg-white shadow-shape rounded-2xl py-24 px-12 max-w-xl
     md:py-32 md:px-28
     "
+		id="who-are-we"
 	>
-		<Title text="Who are we?" />
+		<h1
+			class="
+			text-center w-full mb-8 text-2xl font-title font-bold
+			md:text-4xl
+			"
+		>
+			Who are we?
+		</h1>
 		<p
 			class="
-        leading-snug text-gray-600 text-lg
-        md:text-center"
+        leading-snug text-gray-600 text-sm
+        md:text-center md:text-xl"
 		>
 			As Team Shape, we are trying to establish a culture where people are
 			valued based on their character, knowledge and their willingness to

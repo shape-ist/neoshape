@@ -1,4 +1,4 @@
-<script type="module">
+<script>
 	import Landing from '@lib/landing/Landing.svelte';
 </script>
 

@@ -1,4 +1,4 @@
-<script type="module">
+<script>
 	import Header from '@lib/header/Header.svelte';
 </script>
 

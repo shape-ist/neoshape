@@ -1,4 +1,4 @@
-<script type="module">
+<script>
 	import { page } from '$app/stores';
 	export let to = '/';
 	export let title = 'Button';

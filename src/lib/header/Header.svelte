@@ -1,4 +1,4 @@
-<script type="module">
+<script>
 	import HeaderBtn from './src/HeaderBtn.svelte';
 	import Logo from '@lib/Logo.svelte';
 </script>

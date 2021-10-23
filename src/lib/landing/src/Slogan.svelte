@@ -1,6 +1,16 @@
-<script type="module">
+<script>
 	import Button from '@lib/Button.svelte';
 	import Blob from './blob/Blob1.svelte';
+	import * as jq from 'jquery';
+	export let scrollToElement = function (el, ms) {
+		var speed = ms ? ms : 600;
+		jq('html,body').animate(
+			{
+				scrollTop: jq(el).offset().top,
+			},
+			speed
+		);
+	};
 </script>
 
 <div style="height:80vh;">
@@ -32,7 +42,7 @@
 				text="Learn More"
 				extraClass="z-40"
 				click={() => {
-					// TODO: scroll to 'who are we' card
+					scrollToElement(jq('#who-are-we'), 500);
 				}}
 			/>
 		</div>

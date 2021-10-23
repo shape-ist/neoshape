@@ -1,4 +1,4 @@
-<script type="module">
+<script>
 	import Slogan from './src/Slogan.svelte';
 	import Who from './src/Who.svelte';
 	import Projects from './src/Projects.svelte';

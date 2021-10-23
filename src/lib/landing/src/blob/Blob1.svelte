@@ -1,4 +1,4 @@
-<script type="module">
+<script>
 	export let w = 10;
 	export let h = 20;
 </script>

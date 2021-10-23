@@ -1,4 +1,4 @@
-<script type="module">
+<script>
 	export let w = 'auto';
 	export let h = 'auto';
 </script>

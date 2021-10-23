@@ -1,6 +1,5 @@
-<script type="module">
+<script>
 	import Apps from './Apps.svelte';
-	import Title from './Title.svelte';
 	import Button from '@lib/Button.svelte';
 </script>
 
@@ -10,7 +9,14 @@ flex flex-col justify-between items-center mt-80
 md:flex-row"
 >
 	<div class="max-w-xl">
-		<Title text="Projects" extraClass="text-left" />
+		<h1
+			class="
+			text-left w-full mb-4 text-2xl font-title font-bold
+			md:text-4xl
+			"
+		>
+			Projects
+		</h1>
 		<p
 			class="
 		mb-8 leading-snug text-xl
