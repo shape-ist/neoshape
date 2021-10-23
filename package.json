@@ -14,6 +14,7 @@
     "eslint-plugin-svelte3": "^3.2.1",
     "postcss": "^8.3.11",
     "svelte": "^3.42.6",
+    "tailwind-override": "^0.2.3",
     "tailwindcss": "^2.2.17",
     "vite-plugin-svelte-svg": "^1.0.0"
   },

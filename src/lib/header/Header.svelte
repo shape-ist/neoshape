@@ -1,6 +1,6 @@
-<script>
+<script type="module">
 	import HeaderBtn from './src/HeaderBtn.svelte';
-	import Logo from '@static/logo.svg?component';
+	import Logo from '@lib/Logo.svelte';
 </script>
 
 <header
@@ -9,13 +9,13 @@
 	<div
 		class="
 		hidden transition-all duration-500
-		px-12 justify-center items-center absoulte sticky top-0 h-full object-fit bg-gray-50 drop-shadow-sm border-gray-200 border
+		px-12 justify-center items-center absoulte sticky top-0 h-full object-fit bg-gray-50 shadow-shape border-gray-200 border
 		w-full mt-0
-		lg:w-auto lg:rounded-3xl lg:mt-6
+		lg:w-auto lg:rounded-3xl lg:mt-12
 		sm:flex"
 	>
-		<a href="/">
-			<Logo class="mr-3" on:click={console.log('uwu')} />
+		<a href="/" class="mr-8">
+			<Logo />
 		</a>
 		<div class="h-1/3 border border-gray-400s mr-3" />
 		<HeaderBtn to="/" title="Home" />

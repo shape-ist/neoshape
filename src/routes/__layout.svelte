@@ -1,4 +1,4 @@
-<script>
+<script type="module">
 	import Header from '@lib/header/Header.svelte';
 </script>
 
@@ -16,7 +16,7 @@
 	#app {
 		max-width: 1000px;
 		margin: auto;
-		padding: 0 40px;
+		padding: 0 32px;
 		padding-bottom: 200px;
 	}
 </style>

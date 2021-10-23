@@ -1,6 +1,11 @@
+<script type="module">
+	export let w = 'auto';
+	export let h = 'auto';
+</script>
+
 <svg
-	width="852"
-	height="661"
+	width={w}
+	height={h}
 	viewBox="0 0 852 661"
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"

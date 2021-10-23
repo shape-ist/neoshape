@@ -1,24 +1,42 @@
-<script>
+<script type="module">
 	import Button from '@lib/Button.svelte';
 	import Blob from './blob/Blob1.svelte';
 </script>
 
-<div id="blob-wrapper" class="z-10">
-	<Blob h="500vh" w="auto" />
-</div>
-
-<div
-	class="w-full flex items-left justify-center flex-col"
-	style="height: 80vh;"
->
-	<h1
+<div style="height:80vh;">
+	<div
+		id="blob-wrapper"
 		class="
-		align-left font-secondary font-bold text-6xl mb-2
+	hidden
+	z-10
+	md:block
 	"
 	>
-		We shape <br /> the future.
-	</h1>
-	<Button text="Learn More" href="/about" />
+		<Blob h="100%" w="auto" />
+	</div>
+
+	<div class="h-screen">
+		<div
+			class="w-full flex items-left justify-center flex-col h-3/5
+	lg:h-4/5"
+		>
+			<h1
+				class="
+	align-left font-secondary font-bold text-5xl mb-2 leading-90 z-40 text-black
+	lg:text-7xl
+	"
+			>
+				We shape <br /> the future.
+			</h1>
+			<Button
+				text="Learn More"
+				extraClass="z-40"
+				click={() => {
+					// TODO: scroll to 'who are we' card
+				}}
+			/>
+		</div>
+	</div>
 </div>
 
 <style>
@@ -26,12 +44,7 @@
 		position: absolute;
 		right: 0;
 		top: 0;
-		transform: translate(50%, -100%);
+		transform: translate(45%, -25%) rotate(20deg);
 		height: 200vh;
-	}
-	#blob {
-		height: 100%;
-		width: 100%;
-		display: none;
 	}
 </style>
