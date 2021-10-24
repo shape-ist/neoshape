@@ -28,7 +28,7 @@
 	<div class="h-screen">
 		<div
 			class="w-full flex items-left justify-center flex-col h-3/5
-	lg:h-4/5"
+	sm:h-4/5"
 		>
 			<h1
 				class="
@@ -42,7 +42,7 @@
 				text="Learn More"
 				extraClass="z-40"
 				click={() => {
-					scrollToElement(jq('#who-are-we'), 500);
+					scrollToElement(jq('#who-anchor'), 400);
 				}}
 			/>
 		</div>

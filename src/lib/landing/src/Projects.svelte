@@ -32,7 +32,7 @@ md:flex-row"
 			dedication to self-improve as we strongly believe that passionate
 			individuals create devout communities who can change the world!
 		</p>
-		<Button text="See Projects" href="/projects" />
+		<Button text="Explore Projects" href="/projects" />
 	</div>
 	<div class="max-w-2xl">
 		<Apps />

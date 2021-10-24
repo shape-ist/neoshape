@@ -2,6 +2,7 @@
 	import Blob2 from './blob/Blob2.svelte';
 </script>
 
+<div class="w-full h-1" style="transform:translateY(-200px)" id="who-anchor" />
 <div class="w-full flex items-center justify-center">
 	<div class="blob absolute left-0">
 		<Blob2 w="900px" />
