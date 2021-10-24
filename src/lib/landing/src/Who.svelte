@@ -4,7 +4,12 @@
 
 <div class="w-full h-1" style="transform:translateY(-200px)" id="who-anchor" />
 <div class="w-full flex items-center justify-center">
-	<div class="blob absolute left-0">
+	<div
+		class="
+	blob absolute left-0
+	dark:filter dark:contrast-125 dark:brightness-110 dark:-hue-rotate-15
+	"
+	>
 		<Blob2 w="900px" />
 	</div>
 	<div
@@ -12,13 +17,15 @@
     z-40
     w-full bg-white shadow-shape rounded-2xl py-24 px-12 max-w-xl
     md:py-32 md:px-28
+	dark:bg-purple-dark-secondary
     "
 		id="who-are-we"
 	>
 		<h1
 			class="
-			text-center w-full mb-8 text-2xl font-title font-bold
+			text-center w-full mb-8 text-3xl font-title font-bold
 			md:text-4xl
+			dark:text-white
 			"
 		>
 			Who are we?
@@ -26,7 +33,9 @@
 		<p
 			class="
         leading-snug text-gray-600 text-sm
-        md:text-center md:text-xl"
+        sm:text-center sm:text-xl
+		dark:text-gray-200
+		"
 		>
 			As Team Shape, we are trying to establish a culture where people are
 			valued based on their character, knowledge and their willingness to

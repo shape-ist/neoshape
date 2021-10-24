@@ -11,8 +11,9 @@ md:flex-row"
 	<div class="max-w-xl">
 		<h1
 			class="
-			text-left w-full mb-4 text-2xl font-title font-bold
+			text-left w-full mb-4 text-3xl font-title font-bold
 			md:text-4xl
+			dark:text-white
 			"
 		>
 			Projects
@@ -21,6 +22,7 @@ md:flex-row"
 			class="
 		mb-8 leading-snug text-xl
 		md:mr-32
+		dark:text-gray-200
 		"
 		>
 			After completing our courses, we provide our members with promising

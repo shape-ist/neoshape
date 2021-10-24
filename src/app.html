@@ -10,6 +10,26 @@
 	</head>
 		%svelte.head%
 	</head>
+	<style>
+		html {
+			overflow-x: hidden;
+		}
+		::-webkit-scrollbar {
+			width: 9px;
+		}
+		::-webkit-scrollbar-track {
+			background: white;
+		}
+		::-webkit-scrollbar-thumb {
+			background: #2b2740;
+		}
+		.dark ::-webkit-scrollbar-track {
+			background: #242130;
+		}
+		.dark ::-webkit-scrollbar-thumb {
+			background: #4E4771;
+		}
+	</style>
 	<body>
 		<div id="svelte">%svelte.body%</div>
 	</body>

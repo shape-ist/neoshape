@@ -20,6 +20,8 @@
 	hidden
 	z-10
 	md:block
+	relative
+	dark:filter dark:contrast-125 dark:brightness-110 dark:-hue-rotate-15
 	"
 	>
 		<Blob h="100%" w="auto" />
@@ -34,6 +36,7 @@
 				class="
 	align-left font-secondary font-bold text-5xl mb-2 leading-90 z-40 text-black
 	lg:text-7xl
+	dark:text-white
 	"
 			>
 				We shape <br /> the future.

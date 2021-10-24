@@ -2,7 +2,7 @@
 	import Header from '@lib/header/Header.svelte';
 </script>
 
-<main>
+<main class="bg-white dark:bg-purple-dark">
 	<Header />
 	<div id="app">
 		<slot />
