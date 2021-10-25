@@ -12,7 +12,7 @@
 		px-12 justify-center items-center absoulte sticky top-0 h-full object-fit bg-gray-50 shadow-shape border-gray-200 border
 		w-auto rounded-3xl mt-12 mx-20
 		md:flex
-		dark:bg-purple-dark-secondary dark:border-gray-700
+		dark:bg-purple-dark-secondary dark:border-transparent
 		"
 	>
 		<a
