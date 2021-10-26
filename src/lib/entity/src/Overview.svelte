@@ -6,7 +6,7 @@
 		let rgb = getAverageRGB(el);
 		let cssAcc = generateCSSAccent(rgbToHsl(...rgb), '1');
 		console.log(cssAcc, el);
-		el.style.boxShadow = `0 16px 60px -20px hsla(265, 50%, 52%, 1)`;
+		el.style.boxShadow = `0 16px 100px -20px hsla(265, 50%, 52%, 1)`;
 	});
 </script>
 
@@ -28,13 +28,22 @@ w-full justify-center flex-col
 		/>
 	</div>
 	<h1
-		class="
-text-center mt-10 font-title font-bold text-2xl px-10 leading-110
-">The Istanbul Chronicle</h1
+		class="text-center mt-6 font-title font-bold text-2xl px-10 leading-110 text-black
+		dark:text-white"
 	>
+		<span
+			class="text-gray-500 text-center px-8 text-xs uppercase leading-loose
+			dark:text-gray-400"
+		>
+			project
+		</span>
+		<br />
+		<span> The Istanbul Chronicle </span>
+	</h1>
 	<p
 		class="
 leading-110 mt-4 text-gray-500 text-center px-8 text-sm
+dark:text-gray-400
 "
 	>
 		As The Istanbul Chronicle, we deem that true information should be
