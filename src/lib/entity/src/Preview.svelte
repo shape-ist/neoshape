@@ -50,12 +50,28 @@
 		bgEl.style.background = cssBgProp;
 		bgEl.style.display = 'block';
 
-		console.log(bgColor);
-
 		let blendedAccent = blend(bgColor, cssAccentHex, gOpacity);
 		document
 			.getElementById('theme-meta')
 			.setAttribute('content', blendedAccent);
+
+		var lastKnown = window.scrollY;
+		var scrollThreshold = 120;
+		document.addEventListener('scroll', function (e) {
+			let y = window.scrollY;
+			if (y > scrollThreshold && lastKnown < scrollThreshold) {
+				document
+					.getElementById('theme-meta')
+					.setAttribute('content', bgColor);
+				bgEl.style.opacity = 0;
+			} else if (y < scrollThreshold && lastKnown > scrollThreshold) {
+				document
+					.getElementById('theme-meta')
+					.setAttribute('content', blendedAccent);
+				bgEl.style.opacity = 1;
+			}
+			lastKnown = y;
+		});
 	});
 </script>
 
@@ -140,6 +156,7 @@ md:text-left
 		}
 	}
 	#bg-grad {
+		transition: 0.5s ease;
 		animation: 0.8s top-in;
 	}
 </style>
