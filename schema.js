@@ -51,13 +51,13 @@ export default createSchema({
         }
       },
       {
-        title: "Overview",
-        name: "overview",
+        title: "Preview",
+        name: "preview",
         type: "text",
         description: "Short information about the project, this will be displayed in the projects page as a shorter description of the project. Make sure it is eye-catching and intriguing. This field is ideally a shorter description (see below) or just the introduction of the below field.",
         validation: Rule => Rule.required()
-          .min(250).error('The project overview should be at least 250 characters long.')
-          .max(500)
+          .min(200).error('The project preview should be at least 200 characters long.')
+          .max(400)
       },
       {
         title: "Project Description",

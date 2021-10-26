@@ -35,7 +35,7 @@
 			{text}
 		</button>
 	{:else if href != ''}
-		<a {href} style="width: fit-content;" class={classList}>
+		<a {href} style="width: fit-content;" class={classList} target="_blank">
 			{text}
 		</a>
 	{:else}
