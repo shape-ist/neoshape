@@ -1,22 +1,52 @@
 <script>
 	import { onMount } from 'svelte';
-	import { getAverageRGB, rgbToHsl, generateCSSAccent } from './color';
+	import {
+		getAverageRGB,
+		rgbToHsl,
+		generateCSSAccent,
+		blend,
+		hslToHex,
+	} from './color';
+	export let iconSrc =
+		'https://miro.medium.com/max/600/1*fB8aoJuz1a27y1x3z0w1Kw.png';
 	onMount(() => {
+		let gOpacity = 0.25;
+
 		let el = document.getElementById('entity-icon');
+		let bgEl = document.getElementById('bg-grad');
+
+		el.setAttribute('crossOrigin', 'anonymous');
+
 		let rgb = getAverageRGB(el);
 		let hsl = rgbToHsl(...rgb);
+		hsl[1] = 100;
+		hsl[2] = 40;
+
+		let hslFormatted = [];
+		hslFormatted.push(hsl[0]);
+		hslFormatted.push(hsl[1]);
+		hslFormatted.push(hsl[2]);
+
+		console.log(hslFormatted);
+		console.log(hsl);
 
 		// entity icon
-		let cssAccent = generateCSSAccent(hsl, '.5');
+		let cssAccent = generateCSSAccent(hsl, gOpacity);
+		let cssAccentHex = hslToHex(...hslFormatted);
 		let cssBgProp = `linear-gradient(${cssAccent}, transparent)`;
-		document.getElementById('bg-grad').style.background = cssBgProp;
+		bgEl.style.display = 'none';
+		bgEl.style.background = cssBgProp;
+		bgEl.style.display = 'block';
+
+		let blendedAccent = blend('#1e1d2a', cssAccentHex, gOpacity);
+		document
+			.getElementById('theme-meta')
+			.setAttribute('content', blendedAccent);
 	});
-	export let iconSrc =
-		'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-2jY-7w9Kdf6hx20VcMwe992fQ6BSI2Bn6t35JjpEikwNAFkWJV8bR9OMGuZj63MC3zs&usqp=CAU';
 </script>
 
 <svelte:head>
-	<meta name="theme-color" content="#000000" />
+	<meta id="theme-meta" name="theme-color" />
 </svelte:head>
 <div
 	class="
@@ -26,7 +56,7 @@ z-10 h-0 w-0
 	<div
 		id="bg-grad"
 		class="
-	absolute top-0 left-0 w-screen h-4/5 transition duration-1000
+	absolute top-0 left-0 w-screen h-4/5
 	"
 	/>
 </div>
@@ -75,3 +105,19 @@ dark:text-gray-400
 		liberation.
 	</p>
 </div>
+
+<style>
+	@keyframes top-in {
+		from {
+			opacity: 0;
+			transform: translateY(-600px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	#bg-grad {
+		animation: 0.8s top-in;
+	}
+</style>
