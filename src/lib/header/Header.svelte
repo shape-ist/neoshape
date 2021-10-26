@@ -3,15 +3,25 @@
 	import Logo from '@lib/Logo.svelte';
 </script>
 
+<div
+	id="mobile-header-spacer"
+	class="
+flex h-12
+md:hidden
+"
+/>
+
 <header
-	class="z-50 w-full h-20 flex justify-center items-center sticky top-0 mb-6"
+	class="
+	hidden z-50 w-full h-20 justify-center items-center sticky top-0 mb-6
+	md:flex
+	"
 >
 	<div
 		class="
-		hidden transition-all duration-500
+		flex transition-all duration-500
 		px-12 justify-center items-center absoulte sticky top-0 h-full object-fit bg-gray-50 shadow-shape border-gray-200 border
 		w-auto rounded-3xl mt-12 mx-20
-		md:flex
 		dark:bg-purple-dark-secondary dark:border-transparent
 		"
 	>

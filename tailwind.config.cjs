@@ -20,7 +20,8 @@ module.exports = {
     },
     extend: {
       lineHeight: {
-        '90': '90%'
+        '90': '90%',
+        '110': '110%'
       },
       fontFamily: {
         'title': ['"Hind"', ...defaultTheme.fontFamily.sans],
