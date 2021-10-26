@@ -4,27 +4,49 @@
 	onMount(() => {
 		let el = document.getElementById('entity-icon');
 		let rgb = getAverageRGB(el);
-		let cssAcc = generateCSSAccent(rgbToHsl(...rgb), '1');
-		console.log(cssAcc, el);
-		el.style.boxShadow = `0 16px 100px -20px hsla(265, 50%, 52%, 1)`;
+		let hsl = rgbToHsl(...rgb);
+
+		// entity icon
+		let cssAccent = generateCSSAccent(hsl, '.5');
+		let cssBgProp = `linear-gradient(${cssAccent}, transparent)`;
+		document.getElementById('bg-grad').style.background = cssBgProp;
 	});
+	export let iconSrc =
+		'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-2jY-7w9Kdf6hx20VcMwe992fQ6BSI2Bn6t35JjpEikwNAFkWJV8bR9OMGuZj63MC3zs&usqp=CAU';
 </script>
 
+<svelte:head>
+	<meta name="theme-color" content="#000000" />
+</svelte:head>
 <div
 	class="
-w-full justify-center flex-col
+z-10 h-0 w-0
 "
+>
+	<div
+		id="bg-grad"
+		class="
+	absolute top-0 left-0 w-screen h-4/5 transition duration-1000
+	"
+	/>
+</div>
+<div
+	class="
+	w-full justify-center flex-col
+	"
 >
 	<div class="mx-10">
 		<img
 			id="entity-icon"
-			src="https://miro.medium.com/max/600/1*fB8aoJuz1a27y1x3z0w1Kw.png"
+			src={iconSrc}
 			alt="Project Name comes here"
 			crossOrigin="anonymous"
+			style="
+			box-shadow: 0 12px 20px -10px rgba(0,0,0,.25);
+			"
 			class="
-        w-full h-full
-        rounded-3xl
-		"
+			w-full h-full rounded-3xl
+			"
 		/>
 	</div>
 	<h1

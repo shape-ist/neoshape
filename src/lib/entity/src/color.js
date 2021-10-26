@@ -87,8 +87,8 @@ export function rgbToHsl(r, g, b) {
 }
 
 export function generateCSSAccent(hsla, alpha = '1') {
-    hsla[1] = hsla[1] + '%'
-    hsla[2] = hsla[2] + '%'
+    hsla[1] = Math.round(hsla[1]).toString() + '%'
+    hsla[2] = Math.round(hsla[2]).toString() + '%'
     hsla.push(alpha)
     hsla = hsla.join(", ");
     return `hsla(${hsla})`
