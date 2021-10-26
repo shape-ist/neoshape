@@ -64,7 +64,7 @@
 </svelte:head>
 <div
 	class="
-z-10 h-0 w-0
+z-10 h-0 w-0 md:hidden
 "
 >
 	<div
@@ -79,7 +79,10 @@ z-10 h-0 w-0
 	w-full justify-center flex-col mb-20
 	"
 >
-	<div class="mx-10">
+	<div
+		class="mx-10
+	md:mx-0"
+	>
 		<img
 			id="entity-icon"
 			src={iconSrc}
@@ -95,11 +98,15 @@ z-10 h-0 w-0
 	</div>
 	<h1
 		class="text-center mt-6 font-title font-bold text-2xl px-10 leading-110 text-black
-		dark:text-white"
+		dark:text-white
+		md:text-left
+		"
 	>
 		<span
-			class="text-gray-500 text-center px-8 text-xs uppercase leading-loose
-			dark:text-gray-400"
+			class="text-gray-500 px-8 text-xs uppercase leading-loose
+			dark:text-gray-400
+			md:hidden
+			"
 		>
 			project
 		</span>
@@ -110,6 +117,7 @@ z-10 h-0 w-0
 		class="
 leading-110 mt-4 text-gray-500 text-center px-8 text-sm
 dark:text-gray-400
+md:text-left
 "
 	>
 		As The Istanbul Chronicle, we deem that true information should be

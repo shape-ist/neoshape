@@ -16,7 +16,7 @@
 	#app {
 		max-width: 1000px;
 		margin: auto;
-		padding: 0 32px;
+		padding: 0 36px;
 		padding-bottom: 200px;
 	}
 </style>

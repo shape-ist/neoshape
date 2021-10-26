@@ -4,6 +4,10 @@
 	import Jobs from './src/Jobs.svelte';
 </script>
 
-<Preview />
-<Overview />
-<Jobs />
+<div class="flex flex-col md:flex-row">
+	<Preview />
+	<div>
+		<Overview />
+		<Jobs />
+	</div>
+</div>
