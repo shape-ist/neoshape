@@ -2,7 +2,7 @@
 	import Blob2 from './blob/Blob2.svelte';
 </script>
 
-<div class="w-full h-1" style="transform:translateY(-200px)" id="who-anchor" />
+<div class="w-full h-1" style="transform:translateY(-120px)" id="who-anchor" />
 <div class="w-full flex items-center justify-center">
 	<div
 		class="
@@ -15,9 +15,9 @@
 	<div
 		class="
     z-40
-    w-full bg-white shadow-shape rounded-2xl py-24 px-12 max-w-xl
-    md:py-32 md:px-28
-	dark:bg-purple-dark-secondary
+    w-screen bg-white shadow-shape-light rounded-2xl py-24 px-12
+    md:py-32 md:px-28 md:w-4/5
+	dark:bg-purple-dark-secondary dark:shadow-shape-dark
     "
 		id="who-are-we"
 	>

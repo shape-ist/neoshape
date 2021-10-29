@@ -6,13 +6,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Hind:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+		<link crossorigin href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Hind:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
 	</head>
 		%svelte.head%
 	</head>
 	<style>
 		html {
 			overflow-x: hidden;
+			background: white
+		}
+		html.dark {
+			background: #16151C;
 		}
 		::-webkit-scrollbar {
 			width: 9px;
@@ -21,10 +25,10 @@
 			background: white;
 		}
 		::-webkit-scrollbar-thumb {
-			background: #2b2740;
+			background: #2a2541;
 		}
 		.dark ::-webkit-scrollbar-track {
-			background: #242130;
+			background: #2a2541;
 		}
 		.dark ::-webkit-scrollbar-thumb {
 			background: #4E4771;

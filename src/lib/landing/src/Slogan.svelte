@@ -29,12 +29,12 @@
 
 	<div class="h-screen">
 		<div
-			class="w-full flex items-left justify-center flex-col h-3/5
+			class="w-full flex items-left justify-center flex-col h-4/6
 	sm:h-4/5"
 		>
 			<h1
 				class="
-	align-left font-secondary font-bold text-5xl mb-2 leading-90 z-40 text-black
+	align-left font-secondary font-bold text-5xl mb-4 leading-90 z-40 text-black
 	lg:text-7xl
 	dark:text-white
 	"

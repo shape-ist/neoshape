@@ -25,7 +25,7 @@
 				})
 		);
 
-		let gOpacity = 0.2;
+		let gOpacity = 0.12;
 
 		let el = document.getElementById('entity-icon');
 		let bgEl = document.getElementById('bg-grad');

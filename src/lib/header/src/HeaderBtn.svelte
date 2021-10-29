@@ -9,7 +9,7 @@
 		class:active={$page.path === to}
 		sveltekit:prefetch
 		class="
-		font-title text-gray-600 font-medium px-5 align-middle text-sm
+		font-title text-gray-600 font-medium px-5 align-middle text-sm py-4
 		dark:text-white
 		"
 		href={to}

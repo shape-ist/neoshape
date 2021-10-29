@@ -10,7 +10,7 @@
         font-secondary
         my-2
         cursor-pointer
-        bg-purple-600 text-purple-50 px-6 py-2 rounded-xl drop-shadow-sm
+        bg-purple-600 text-purple-50 px-6 py-2 rounded-lg drop-shadow-sm
     `;
 	export let classList =
 		overrideTailwindClasses(defaultTheme + extraClass) +

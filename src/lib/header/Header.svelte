@@ -13,16 +13,17 @@ md:hidden
 
 <header
 	class="
-	hidden z-50 w-full h-20 justify-center items-center sticky top-0 mb-6
+	hidden z-50 w-full h-20 justify-center items-center sticky top-0 mb-6 bg-gradient-to-b from-bg-grad-light
+	dark:from-bg-grad-dark
 	md:flex
 	"
 >
 	<div
 		class="
 		flex transition-all duration-500
-		px-12 justify-center items-center absoulte sticky top-0 h-full object-fit bg-gray-50 shadow-shape border-gray-200 border
-		w-auto rounded-3xl mt-12 mx-20
-		dark:bg-purple-dark-secondary dark:border-transparent
+		px-12 justify-center items-center absoulte sticky top-0 h-full object-fit bg-gray-50 shadow-shape-light border-gray-200 border
+		w-auto rounded-3xl mt-8 mx-20
+		dark:bg-purple-dark-secondary dark:border-transparent dark:shadow-shape-dark
 		"
 	>
 		<a
