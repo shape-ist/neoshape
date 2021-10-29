@@ -93,11 +93,13 @@ z-10 h-0 w-0 md:hidden
 <div
 	class="
 	w-full justify-center flex-col mb-20
+	md:mr-16
 	"
 >
 	<div
 		class="mx-10
-	md:mx-0"
+	md:mx-0
+	"
 	>
 		<img
 			id="entity-icon"
@@ -115,7 +117,7 @@ z-10 h-0 w-0 md:hidden
 	<h1
 		class="text-center mt-6 font-title font-bold text-2xl px-10 leading-110 text-black
 		dark:text-white
-		md:text-left
+		md:text-left md:px-0 md:pr-4 md:text-3xl
 		"
 	>
 		<span
@@ -133,7 +135,7 @@ z-10 h-0 w-0 md:hidden
 		class="
 leading-110 mt-4 text-gray-500 text-center px-8 text-sm
 dark:text-gray-400
-md:text-left
+md:text-left md:px-0 md:pr-4 md:text-md md:leading-snug
 "
 	>
 		As The Istanbul Chronicle, we deem that true information should be

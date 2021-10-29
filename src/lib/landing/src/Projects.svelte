@@ -1,11 +1,14 @@
 <script>
 	import Apps from './Apps.svelte';
 	import Button from '@lib/Button.svelte';
+	import ContentSpacer from './ContentSpacer.svelte';
 </script>
+
+<ContentSpacer />
 
 <div
 	class="
-flex flex-col justify-between items-center mt-80
+flex flex-col justify-between items-center mt-48
 md:flex-row"
 >
 	<div class="max-w-xl">
@@ -36,7 +39,9 @@ md:flex-row"
 		</p>
 		<Button text="Explore Projects" href="/projects" />
 	</div>
+	<!-- 
 	<div class="max-w-2xl">
 		<Apps />
 	</div>
+	-->
 </div>

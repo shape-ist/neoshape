@@ -14,7 +14,7 @@
 	@tailwind components;
 	@tailwind utilities;
 	#app {
-		max-width: 1000px;
+		max-width: 1440px;
 		margin: auto;
 		padding: 0 36px;
 		padding-bottom: 200px;

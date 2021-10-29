@@ -4,9 +4,17 @@
 	export let click = null;
 	export let href = '';
 	export let extraClass = '';
+	export let blank = 'false';
+	let blankBool = false;
+	if (blank == 'false') {
+		blankBool = false;
+	} else {
+		blankBool = true;
+	}
+	export let target = blankBool ? '_blank' : '_self';
 	let defaultTheme = `
         transition-all
-        font-bold
+        font-medium
         font-secondary
         my-2
         cursor-pointer
@@ -35,7 +43,7 @@
 			{text}
 		</button>
 	{:else if href != ''}
-		<a {href} style="width: fit-content;" class={classList} target="_blank">
+		<a {href} style="width: fit-content;" class={classList} {target}>
 			{text}
 		</a>
 	{:else}

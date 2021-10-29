@@ -13,7 +13,7 @@ md:hidden
 
 <header
 	class="
-	hidden z-50 w-full h-20 justify-center items-center sticky top-0 mb-6 bg-gradient-to-b from-bg-grad-light
+	hidden z-50 w-full h-20 justify-center items-center sticky top-0 mb-20 bg-gradient-to-b from-bg-grad-light
 	dark:from-bg-grad-dark
 	md:flex
 	"
