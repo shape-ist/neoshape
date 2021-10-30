@@ -14,8 +14,8 @@
 	export let target = blankBool ? '_blank' : '_self';
 	let defaultTheme = `
         transition-all
-        font-medium
-        font-secondary
+        font-bold
+		font-secondary
         my-2
         cursor-pointer
         bg-purple-600 text-purple-50 px-6 py-2 rounded-lg drop-shadow-sm

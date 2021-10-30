@@ -9,7 +9,7 @@
 	<p
 		class="text-sm text-gray-600 leading-snug
 	dark:text-gray-400
-	md:text-lg
+	md:text-lg md:leading-snug
 	"
 	>
 		As The Istanbul Chronicle, we deem that true information should be

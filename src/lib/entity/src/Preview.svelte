@@ -93,7 +93,7 @@ z-10 h-0 w-0 md:hidden
 <div
 	class="
 	w-full justify-center flex-col mb-20
-	md:mr-16
+	md:mr-16 md:max-w-xs
 	"
 >
 	<div
@@ -107,17 +107,18 @@ z-10 h-0 w-0 md:hidden
 			alt="Project Name comes here"
 			crossOrigin="anonymous"
 			style="
-			box-shadow: 0 12px 20px -10px rgba(0,0,0,.25);
+			box-shadow: 0 20px 40px -12px rgba(0,0,0,.2);
+			border-radius: 20%;
 			"
 			class="
-			w-full h-full rounded-3xl
+			w-full h-full
 			"
 		/>
 	</div>
 	<h1
 		class="text-center mt-6 font-title font-bold text-2xl px-10 leading-110 text-black
 		dark:text-white
-		md:text-left md:px-0 md:pr-4 md:text-3xl
+		md:text-left md:px-0 md:pr-4 md:text-4xl md:mt-0
 		"
 	>
 		<span

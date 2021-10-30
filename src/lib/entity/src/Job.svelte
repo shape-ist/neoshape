@@ -14,7 +14,7 @@
 	<p
 		class="text-sm text-gray-600 leading-snug
 dark:text-gray-400
-md:text-lg
+md:text-lg md:leading-snug
 "
 	>
 		Coordinating online or print publishing cycle and managing content areas

@@ -1,5 +1,6 @@
 <script>
 	import HeaderBtn from './src/HeaderBtn.svelte';
+	import ThemeBtn from './src/ThemeBtn.svelte';
 	import Logo from '@lib/Logo.svelte';
 </script>
 
@@ -40,5 +41,6 @@ md:hidden
 		<HeaderBtn to="/about" title="About" />
 		<HeaderBtn to="/projects" title="Projects" />
 		<HeaderBtn to="/edu" title="Education" />
+		<ThemeBtn />
 	</div>
 </header>
