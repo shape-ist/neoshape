@@ -17,7 +17,8 @@ module.exports = {
         processor: 'svelte3/svelte3'
       }
     ],
-    extends: [
+  extends: [
+    'svelte3/svelte3',
     'eslint:recommended'
   ]
   };

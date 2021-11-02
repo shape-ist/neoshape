@@ -1,19 +1,9 @@
 <script>
-	import Preview from './src/Preview.svelte';
-	import Overview from './src/Overview.svelte';
-	import Jobs from './src/Jobs.svelte';
+	import EntityContentWrapper from './src/EntityContentWrapper.svelte';
+	export let entityAPIUrl = '';
+	console.log(entityAPIUrl);
+	// should generate a json output that will be passed to entity content wrapper
+	export let out = {};
 </script>
 
-<div
-	class="
-	flex flex-col md:flex-row mt-0
-	lg:px-40
-	md:px-6 md:mt-36
-"
->
-	<Preview />
-	<div>
-		<Overview />
-		<Jobs />
-	</div>
-</div>
+<EntityContentWrapper entityJSON={out} />

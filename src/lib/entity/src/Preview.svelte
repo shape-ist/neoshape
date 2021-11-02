@@ -1,4 +1,5 @@
 <script>
+	import EduMeta from './EduMeta.svelte';
 	import { onMount } from 'svelte';
 	import {
 		getAverageRGB,
@@ -78,6 +79,7 @@
 <svelte:head>
 	<meta id="theme-meta" name="theme-color" />
 </svelte:head>
+
 <div
 	class="
 z-10 h-0 w-0 md:hidden
@@ -93,7 +95,7 @@ z-10 h-0 w-0 md:hidden
 <div
 	class="
 	w-full justify-center flex-col mb-20
-	md:mr-16 md:max-w-xs
+	md:mr-16 md:max-w-xs sticky
 	"
 >
 	<div
@@ -134,7 +136,7 @@ z-10 h-0 w-0 md:hidden
 	</h1>
 	<p
 		class="
-leading-110 mt-4 text-gray-500 text-center px-8 text-sm
+leading-110 mt-4 text-gray-500 text-center px-8 text-sm mb-6
 dark:text-gray-400
 md:text-left md:px-0 md:pr-4 md:text-md md:leading-snug
 "
@@ -145,6 +147,7 @@ md:text-left md:px-0 md:pr-4 md:text-md md:leading-snug
 		sources of information because we believe that from truth, comes
 		liberation.
 	</p>
+	<EduMeta />
 </div>
 
 <style>

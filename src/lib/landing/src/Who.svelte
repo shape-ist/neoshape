@@ -16,7 +16,7 @@
 		class="
     z-40
     w-screen bg-white shadow-shape-light rounded-2xl py-24 px-12
-    md:py-32 md:px-28 md:w-1/2
+    md:py-32 md:px-28 lg:w-1/2
 	dark:bg-purple-dark-secondary dark:shadow-shape-dark
     "
 		id="who-are-we"
