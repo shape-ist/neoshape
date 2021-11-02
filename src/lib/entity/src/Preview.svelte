@@ -109,7 +109,7 @@ z-10 h-0 w-0 md:hidden
 			alt="Project Name comes here"
 			crossOrigin="anonymous"
 			style="
-			box-shadow: 0 20px 40px -12px rgba(0,0,0,.2);
+			box-shadow: 0 20px 20px -12px rgba(0,0,0,.12);
 			border-radius: 20%;
 			"
 			class="

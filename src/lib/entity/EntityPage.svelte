@@ -1,9 +1,11 @@
 <script>
 	import EntityContentWrapper from './src/EntityContentWrapper.svelte';
-	export let entityAPIUrl = '';
-	console.log(entityAPIUrl);
-	// should generate a json output that will be passed to entity content wrapper
-	export let out = {};
+	import { queryContent } from '@lib/helpers/sanity.js';
+	let type = 'project';
+	let slug = 'the-istanbul-chronicle';
+	export let out = queryContent(
+		`*[_type == '${type}' && slug.current == '${slug}']`
+	);
 </script>
 
 <EntityContentWrapper entityJSON={out} />

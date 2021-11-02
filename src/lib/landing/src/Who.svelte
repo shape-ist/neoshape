@@ -10,7 +10,7 @@
 	dark:filter dark:contrast-125 dark:brightness-110 dark:-hue-rotate-15
 	"
 	>
-		<Blob2 w="900px" />
+		<Blob2 w="1000px" />
 	</div>
 	<div
 		class="

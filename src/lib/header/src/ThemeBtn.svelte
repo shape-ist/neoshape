@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import { onMount } from 'svelte';
 	function setTheme(themeName) {
 		onMount(() => {
@@ -26,3 +26,4 @@
 </script>
 
 <button on:click={toggleTheme()}>uwu</button>
+ -->
