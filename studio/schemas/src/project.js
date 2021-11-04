@@ -105,6 +105,24 @@ export default {
             type: "image",
             description: "This should not be a photograph, but rater an icon that resembles the project. (e.g. logo, vector graphic, icon)",
             validation: Rule => Rule.required()
+        },
+        {
+            title: "Instagram",
+            description: 'A social link for the current item',
+            name: "instagram",
+            type: "url"
+        },
+        {
+            title: "Twitter",
+            description: 'A social link for the current item',
+            name: "twitter",
+            type: "url"
+        },
+        {
+            title: "LinkedIn",
+            description: 'A social link for the current item',
+            name: "linkedin",
+            type: "url"
         }
     ]
 }
