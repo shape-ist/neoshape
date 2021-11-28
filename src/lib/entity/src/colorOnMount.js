@@ -11,6 +11,8 @@ export default function colorOnMount(doc) {
     let mainElement = doc.getElementsByTagName('main')[0];
     let mainStyle = window.getComputedStyle(mainElement);
     let bgColor = mainStyle.getPropertyValue('background-color');
+    const gOpacity = 0.25;
+
     bgColor = rgbToHex(
         ...bgColor
         .replace('rgb', '')
@@ -21,8 +23,6 @@ export default function colorOnMount(doc) {
             return parseInt(item, 10);
         })
     );
-
-    const gOpacity = 0.2;
 
     let el = doc.getElementById('entity-icon');
     let bgEl = doc.getElementById('bg-grad');
@@ -36,12 +36,12 @@ export default function colorOnMount(doc) {
     if (hsl[0] == 0 && parseFloat(hsl[1]) < 10) {
         // grayscale,
         // use default purple
-        hsl = [270, 100, 50]
+        hsl = [270, 80, 50]
     } else {
         // colorful,
         // increase saturation and lightness
         hsl[1] = 100;
-        hsl[2] = 30;
+        hsl[2] = 35;
     }
 
     let hslFormatted = [];

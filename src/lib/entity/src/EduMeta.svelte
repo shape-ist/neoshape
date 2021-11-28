@@ -2,7 +2,7 @@
 	import MetaItem from './MetaItem.svelte';
 </script>
 
-<div>
+<div class="w-full flex flex-col items-center md:block">
 	<MetaItem />
 	<MetaItem />
 	<MetaItem />
