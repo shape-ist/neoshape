@@ -1,3 +1,7 @@
+<script>
+	export let text;
+</script>
+
 <div class="mb-16">
 	<h1
 		class="mb-4 font-title font-bold text-3xl leading-110 text-black
@@ -12,10 +16,6 @@
 	md:text-lg md:leading-snug
 	"
 	>
-		As The Istanbul Chronicle, we deem that true information should be
-		accessible by everyone, so we provide our readers news that is
-		objective, clear and independent from bias. We search for verified
-		sources of information because we believe that from truth, comes
-		liberation.
+		{text}
 	</p>
 </div>

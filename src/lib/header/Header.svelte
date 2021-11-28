@@ -41,6 +41,7 @@ md:hidden
 		<HeaderBtn to="/about" title="About" />
 		<HeaderBtn to="/projects" title="Projects" />
 		<HeaderBtn to="/edu" title="Education" />
+		<HeaderBtn to="/p/tester" title="Test Entity" />
 		<ThemeBtn />
 	</div>
 </header>
