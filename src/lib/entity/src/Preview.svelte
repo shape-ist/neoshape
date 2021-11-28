@@ -3,79 +3,12 @@
 	export let text;
 	export let entityType;
 	export let iconSrc =
-		'data:image/jpeg;base64,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';
+		'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 	import EduMeta from './EduMeta.svelte';
 	import { onMount } from 'svelte';
-	import {
-		getAverageRGB,
-		rgbToHsl,
-		generateCSSAccent,
-		blend,
-		hslToHex,
-		rgbToHex,
-	} from './color';
+	import colorMount from './colorOnMount';
 	onMount(() => {
-		let mainElement = document.getElementsByTagName('main')[0];
-		let mainStyle = window.getComputedStyle(mainElement);
-		let bgColor = mainStyle.getPropertyValue('background-color');
-		bgColor = rgbToHex(
-			...bgColor
-				.replace('rgb', '')
-				.replace('(', '')
-				.replace(')', '')
-				.split(',')
-				.map(function (item) {
-					return parseInt(item, 10);
-				})
-		);
-
-		let gOpacity = 0.12;
-
-		let el = document.getElementById('entity-icon');
-		let bgEl = document.getElementById('bg-grad');
-
-		el.setAttribute('crossOrigin', 'anonymous');
-
-		let rgb = getAverageRGB(el);
-		let hsl = rgbToHsl(...rgb);
-		hsl[1] = 100;
-		hsl[2] = 40;
-
-		let hslFormatted = [];
-		hslFormatted.push(hsl[0]);
-		hslFormatted.push(hsl[1]);
-		hslFormatted.push(hsl[2]);
-
-		// entity icon
-		let cssAccent = generateCSSAccent(hsl, gOpacity);
-		let cssAccentHex = hslToHex(...hslFormatted);
-		let cssBgProp = `linear-gradient(${cssAccent}, transparent)`;
-		bgEl.style.display = 'none';
-		bgEl.style.background = cssBgProp;
-		bgEl.style.display = 'block';
-
-		let blendedAccent = blend(bgColor, cssAccentHex, gOpacity);
-		document
-			.getElementById('theme-meta')
-			.setAttribute('content', blendedAccent);
-
-		var lastKnown = window.scrollY;
-		var scrollThreshold = 120;
-		document.addEventListener('scroll', function (e) {
-			let y = window.scrollY;
-			if (y > scrollThreshold && lastKnown < scrollThreshold) {
-				document
-					.getElementById('theme-meta')
-					.setAttribute('content', bgColor);
-				bgEl.style.opacity = 0;
-			} else if (y < scrollThreshold && lastKnown > scrollThreshold) {
-				document
-					.getElementById('theme-meta')
-					.setAttribute('content', blendedAccent);
-				bgEl.style.opacity = 1;
-			}
-			lastKnown = y;
-		});
+		colorMount(document);
 	});
 </script>
 
@@ -91,7 +24,7 @@ z-10 h-0 w-0 md:hidden
 	<div
 		id="bg-grad"
 		class="
-	absolute top-0 left-0 w-screen h-4/5
+	absolute top-0 left-0 w-screen h-5/6
 	"
 	/>
 </div>
@@ -116,7 +49,7 @@ z-10 h-0 w-0 md:hidden
 			border-radius: 20%;
 			"
 			class="
-			w-full h-full
+			w-full h-full bg-gray-700
 			"
 		/>
 	</div>

@@ -3,7 +3,6 @@
 	import Overview from './src/Overview.svelte';
 	import Jobs from './src/Jobs.svelte';
 	export let entityJSON;
-	console.log(entityJSON);
 	if (entityJSON.result.length <= 0) {
 		console.log('404 should happen here wops');
 	}
