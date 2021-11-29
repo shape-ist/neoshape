@@ -1,5 +1,8 @@
 const project = import.meta.env.VITE_SANITY_PROJECT
 const defaultDataset = import.meta.env.VITE_SANITY_DATASET
+import client from './client'
+import imageUrlBuilder from '@sanity/image-url'
+const builder = imageUrlBuilder(client)
 
 export async function fetchSanityAPI(url) {
     const response = await fetch(url, {
@@ -17,7 +20,6 @@ export async function queryContent(q, dataset=defaultDataset) {
     `)
 }
 
-export function generateCDNURL(filename) {
-    console.log(filename.asset._ref);
-    return `https://cdn.sanity.io/images/${project}/${defaultDataset}/${filename.asset._ref}`
+export function generateCDNURL(source) {
+    return builder.image(source)
 }
