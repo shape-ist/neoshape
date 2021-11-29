@@ -3,9 +3,9 @@
 	import Overview from './src/Overview.svelte';
 	import Jobs from './src/Jobs.svelte';
 	export let entityJSON;
-	if (entityJSON.result.length <= 0) {
+/* 	if (entityJSON.result.length <= 0) {
 		console.log('404 should happen here wops');
-	}
+	} */
 </script>
 
 <div

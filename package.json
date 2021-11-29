@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev --host",
+    "both": "concurrently \"svelte-kit dev --host\" \"cd studio && npm run start\" ",
     "build": "svelte-kit build",
     "preview": "svelte-kit preview",
     "lint": "eslint --ignore-path .gitignore ."
@@ -19,6 +20,7 @@
   },
   "type": "module",
   "dependencies": {
+    "concurrently": "^6.4.0",
     "jquery": "^3.6.0"
   }
 }
