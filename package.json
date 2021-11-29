@@ -16,13 +16,13 @@
     "postcss": "^8.3.11",
     "svelte": "^3.42.6",
     "tailwind-override": "^0.2.3",
-    "tailwindcss": "^2.2.17"
+    "tailwindcss": "^2.2.17",
+    "concurrently": "^6.4.0"
   },
   "type": "module",
   "dependencies": {
     "@sanity/client": "^2.21.10",
     "@sanity/image-url": "^1.0.1",
-    "concurrently": "^6.4.0",
     "jquery": "^3.6.0"
   }
 }

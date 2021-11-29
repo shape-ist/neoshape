@@ -11,7 +11,6 @@
     </title>
 </svelte:head>
 
-
 <div
     class="
 	flex flex-col md:flex-row mt-0 px-0 mx-0
@@ -25,7 +24,7 @@
         iconFile={entityJSON.result[0].icon}
         entityType={"project"}
     />
-    <div>
+    <div class="max-w-3xl">
         <Overview text={entityJSON.result[0].overview} />
         <Jobs jobs={entityJSON.result[0].jobs} />
     </div>

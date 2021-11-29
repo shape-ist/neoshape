@@ -1,7 +1,8 @@
-const project = import.meta.env.VITE_SANITY_PROJECT
-const defaultDataset = import.meta.env.VITE_SANITY_DATASET
 import client from './client'
 import imageUrlBuilder from '@sanity/image-url'
+const project = import.meta.env.VITE_SANITY_PROJECT
+const defaultDataset = import.meta.env.VITE_SANITY_DATASET
+
 const builder = imageUrlBuilder(client)
 
 export async function fetchSanityAPI(url) {
