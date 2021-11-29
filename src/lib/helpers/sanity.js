@@ -13,6 +13,11 @@ export async function fetchSanityAPI(url) {
 export async function queryContent(q, dataset=defaultDataset) {
     let query = encodeURIComponent(q)
     return await fetchSanityAPI(`
-    https://${project}.api.sanity.io/v1/data/query/${dataset}?query=${query}
+    https://${project}.apicdn.sanity.io/v1/data/query/${dataset}?query=${query}
     `)
+}
+
+export function generateCDNURL(filename) {
+    console.log(filename.asset._ref);
+    return `https://cdn.sanity.io/images/${project}/${defaultDataset}/${filename.asset._ref}`
 }
