@@ -31,7 +31,7 @@ z-10 h-0 w-0 md:hidden
 <div
     class="
 	w-full justify-center flex-col mb-20
-	md:mr-16 md:max-w-xs z-50
+	md:mr-16 md:max-w-xs z-40
 	"
 >
     <div
