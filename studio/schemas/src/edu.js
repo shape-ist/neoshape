@@ -64,35 +64,6 @@ export default {
                 .max(10000)
         },
         {
-            title: "Metadata",
-            name: "metadata",
-            type: "array",
-            description: "Edu metadata. Critical information about the item. (e.g. 'Number of students: 14' or 'Time: 4 hours a week') Avoid longer information. (e.g. list of prerequisites should not be here, it should be in the overview.) ",
-            of: [{
-                title: "Meta",
-                name: "meta-item",
-                type: "object",
-                fields: [{
-                        title: 'Meta Name',
-                        name: 'name',
-                        type: 'string',
-                        description: 'The identifier of the information you want to display. (e.g. number of students)',
-                        validation: Rule => Rule.required()
-                            .min(4)
-                            .max(24).error('Metadata must be very short. If this information is relatively longer, consider putting it in the overview field.')
-                    },
-                    {
-                        title: 'Meta Content',
-                        name: 'content',
-                        type: 'string',
-                        description: 'The content of the information you want to display. (e.g. 14)',
-                        validation: Rule => Rule.required()
-                            .max(24).error('Metadata must be very short. If this information is relatively longer, consider putting it in the overview field.')
-                    }
-                ]
-            }]
-        },
-        {
             title: "Icon",
             name: "icon",
             type: "image",

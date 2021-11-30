@@ -28,6 +28,35 @@ export default {
             validation: Rule => Rule.required().min(4).max(40)
         },
         {
+            title: 'Project Type',
+            name: 'entityType',
+            type: 'string',
+            validation: Rule => Rule.required(),
+            options: {
+                list: [{
+                        title: 'Brand',
+                        value: 'brand'
+                    },
+                    {
+                        title: 'Shape Brand',
+                        value: 'shapeBrand'
+                    },
+                    {
+                        title: 'Project',
+                        value: 'project'
+                    },
+                    {
+                        title: 'Education',
+                        value: 'education'
+                    },
+                    {
+                        title: 'Workshop',
+                        value: 'workshop'
+                    },
+                ],
+            },
+        },
+        {
             title: "Slug",
             name: "slug",
             type: "slug",
@@ -44,8 +73,8 @@ export default {
             type: "text",
             description: "Short information about the project, this will be displayed in the projects page as a shorter description of the project. Make sure it is eye-catching and intriguing. This field is ideally a shorter description (see below) or just the introduction of the below field.",
             validation: Rule => Rule.required()
-                .min(250).error('The project overview should be at least 250 characters long.')
-                .max(500)
+                .min(200).error('The project preview must be between 200 and 400 characters.')
+                .max(400)
         },
         {
             title: "Project Overview",
@@ -53,7 +82,7 @@ export default {
             type: "text",
             description: "Describe the project. Include essential information along with useful information for anyone who might be interested. This should be much more elaborate than the overview as this will be only seen by people who actually click on the project.",
             validation: Rule => Rule.required()
-                .min(600).error('Project overview should be at least 600 characters long.')
+                .min(500).error('Project overview should be at least 500 characters long.')
                 .max(10000)
         },
         {
@@ -78,7 +107,7 @@ export default {
                         type: "text",
                         description: "A long description of the particular job. Explain the requirements and expectations. Explain what the user will be doing if they apply to the job.",
                         validation: Rule => Rule.required()
-                            .min(600).error('Job descriptions should consist of at least 600 characters')
+                            .min(500).error('Job descriptions should consist of at least 500 characters')
                             .max(10000)
                     },
                     {
@@ -105,6 +134,35 @@ export default {
             type: "image",
             description: "This should not be a photograph, but rater an icon that resembles the project. (e.g. logo, vector graphic, icon)",
             validation: Rule => Rule.required()
+        },
+        {
+            title: "Metadata",
+            name: "metadata",
+            type: "array",
+            description: "Edu metadata. Critical information about the item. (e.g. 'Number of students: 14' or 'Time: 4 hours a week') Avoid longer information. (e.g. list of prerequisites should not be here, it should be in the overview.) ",
+            of: [{
+                title: "Meta",
+                name: "meta-item",
+                type: "object",
+                fields: [{
+                        title: 'Meta Name',
+                        name: 'name',
+                        type: 'string',
+                        description: 'The identifier of the information you want to display. (e.g. number of students)',
+                        validation: Rule => Rule.required()
+                            .min(4)
+                            .max(24).error('Metadata must be very short. If this information is relatively longer, consider putting it in the overview field.')
+                    },
+                    {
+                        title: 'Meta Content',
+                        name: 'content',
+                        type: 'string',
+                        description: 'The content of the information you want to display. (e.g. 14)',
+                        validation: Rule => Rule.required()
+                            .max(24).error('Metadata must be very short. If this information is relatively longer, consider putting it in the overview field.')
+                    }
+                ]
+            }]
         },
         {
             title: "Instagram",
