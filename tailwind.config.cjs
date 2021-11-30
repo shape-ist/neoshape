@@ -17,7 +17,7 @@ module.exports = {
     }),
     gradientColorStops: theme => ({
       ...theme('colors'),
-      'bg-grad-dark': 'rgba(30, 29, 42, 0.4)',
+      'bg-grad-dark': 'rgba(30, 29, 42, 0.5)',
       'bg-grad-light': 'rgba(0, 0, 0, .1)',
     }),
     boxShadow: {
