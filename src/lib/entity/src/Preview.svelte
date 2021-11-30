@@ -31,7 +31,7 @@ z-10 h-0 w-0 md:hidden
 <div
     class="
 	w-full justify-center flex-col mb-20
-	md:mr-16 md:max-w-xs sticky z-50
+	md:mr-16 md:max-w-xs z-50
 	"
 >
     <div
@@ -50,7 +50,7 @@ z-10 h-0 w-0 md:hidden
             crossOrigin="anonymous"
             style="
 			box-shadow: 0 20px 20px -12px rgba(0,0,0,.12);
-			border-radius: 20%;
+			border-radius: 15%;
 			"
             class="
 			w-full h-full dark:bg-gray-800 bg-gray-200 relative
@@ -66,7 +66,7 @@ z-10 h-0 w-0 md:hidden
         <span
             class="text-gray-500 px-8 text-xs uppercase leading-loose
 			dark:text-gray-400
-			md:hidden
+            md:p-0
 			"
         >
             {entityType}
