@@ -6,18 +6,21 @@
     "both": "concurrently \"svelte-kit dev --host\" \"cd studio && npm run start\" ",
     "build": "svelte-kit build",
     "preview": "svelte-kit preview",
-    "lint": "eslint --ignore-path .gitignore ."
+    "lint": "eslint --ignore-path .gitignore .",
+    "prettify": "npx prettier --write ."
   },
   "devDependencies": {
     "@sveltejs/kit": "next",
     "autoprefixer": "^10.3.7",
+    "concurrently": "^6.4.0",
     "eslint": "^7.32.0",
     "eslint-plugin-svelte3": "^3.2.1",
     "postcss": "^8.3.11",
+    "prettier": "^2.5.0",
+    "prettier-plugin-svelte": "^2.5.0",
     "svelte": "^3.42.6",
     "tailwind-override": "^0.2.3",
-    "tailwindcss": "^2.2.17",
-    "concurrently": "^6.4.0"
+    "tailwindcss": "^2.2.17"
   },
   "type": "module",
   "dependencies": {

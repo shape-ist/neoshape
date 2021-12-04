@@ -1,6 +1,6 @@
 {
-	"compilerOptions": {
-		"baseUrl": "."
-	},
-	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte"]
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte"]
 }

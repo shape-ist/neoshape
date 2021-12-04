@@ -1,11 +1,11 @@
 <script>
-	export let href = '';
-	export let handle = '';
+  export let href = '';
+  export let handle = '';
 </script>
 
 <p>
-	icon
-	<a {href} target="_blank">
-		{handle}
-	</a>
+  icon
+  <a {href} target="_blank">
+    {handle}
+  </a>
 </p>

@@ -1,31 +1,31 @@
 <script>
-    import Preview from "./src/Preview.svelte";
-    import Overview from "./src/Overview.svelte";
-    import Jobs from "./src/Jobs.svelte";
-    export let entityJSON;
+  import Preview from './src/Preview.svelte';
+  import Overview from './src/Overview.svelte';
+  import Jobs from './src/Jobs.svelte';
+  export let entityJSON;
 </script>
 
 <svelte:head>
-    <title>
-        {entityJSON.result[0].title} by Shape
-    </title>
+  <title>
+    {entityJSON.result[0].title} by Shape
+  </title>
 </svelte:head>
 
 <div
-    class="
+  class="
 	flex flex-col md:flex-row mt-0 px-0 mx-0
 	lg:px-10 lg:mx-32
 	md:px-6 md:mt-36
 "
 >
-    <Preview
-        title={entityJSON.result[0].title}
-        text={entityJSON.result[0].preview}
-        iconFile={entityJSON.result[0].icon}
-        entityType={"project"}
-    />
-    <div class="max-w-3xl">
-        <Overview text={entityJSON.result[0].overview} />
-        <Jobs jobs={entityJSON.result[0].jobs} />
-    </div>
+  <Preview
+    title={entityJSON.result[0].title}
+    text={entityJSON.result[0].preview}
+    iconFile={entityJSON.result[0].icon}
+    entityType={'project'}
+  />
+  <div class="max-w-3xl">
+    <Overview text={entityJSON.result[0].overview} />
+    <Jobs jobs={entityJSON.result[0].jobs} />
+  </div>
 </div>

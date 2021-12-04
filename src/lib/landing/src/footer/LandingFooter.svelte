@@ -1,5 +1,5 @@
 <script>
-	import FooterContactCard from './src/FooterContactCard.svelte';
+  import FooterContactCard from './src/FooterContactCard.svelte';
 </script>
 
 <FooterContactCard />
