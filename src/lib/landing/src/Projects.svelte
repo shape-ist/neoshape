@@ -39,7 +39,7 @@ md:flex-row"
     </p>
     <Button text="Explore Projects" href="/projects" />
   </div>
-  <!-- 
+  <!--
 	<div class="max-w-2xl">
 		<Apps />
 	</div>

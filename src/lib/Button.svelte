@@ -2,6 +2,7 @@
   import { overrideTailwindClasses } from 'tailwind-override';
   export let text = 'Button';
   export let click = null;
+  export let active = true;
   export let href = '';
   export let extraClass = '';
   export let blank = 'false';
@@ -15,23 +16,33 @@
   let defaultTheme = `
         transition-all
         font-bold
-		font-secondary
+		    font-title
         my-2
         cursor-pointer
-        bg-purple-600 text-purple-50 px-6 py-2 rounded-lg drop-shadow-sm
+        bg-purple-600 text-purple-50 px-6 rounded-lg drop-shadow-sm
+        pb-1 pt-2
     `;
-  export let classList =
-    overrideTailwindClasses(defaultTheme + extraClass) +
+  let preClassListNoPseudo = overrideTailwindClasses(defaultTheme + extraClass);
+  let preClassList =
+    preClassListNoPseudo +
     `
 		hover:bg-purple-600 hover:drop-shadow-lg
-        active:bg-indigo-700 active:transform active:scale-90
+    active:bg-indigo-700 active:transform active:scale-90
 		dark:bg-purple-300 dark:text-purple-dark
 		dark:active:bg-purple-400 dark:active:text-indigo-900
 	`;
+  let inactiveClassList = overrideTailwindClasses(
+    preClassListNoPseudo +
+      `
+    pointer-events-none active:transform active:scale-40
+    bg-gray-400 text-gray-700 opacity-50
+  `
+  );
+  export let classList = !active ? inactiveClassList : preClassList;
 </script>
 
 <div
-  class="active:transform active:scale-90 transition-all"
+  class={active ? 'active:transform active:scale-90 transition-all' : ''}
   style="width: fit-content; height: fit-content"
 >
   {#if click != null}
@@ -43,7 +54,12 @@
       {text}
     </button>
   {:else if href != ''}
-    <a {href} style="width: fit-content;" class={classList} {target}>
+    <a
+      href={active ? href : ''}
+      style="width: fit-content;"
+      class={classList}
+      {target}
+    >
       {text}
     </a>
   {:else}

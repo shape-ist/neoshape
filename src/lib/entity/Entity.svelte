@@ -18,13 +18,15 @@
 	md:px-6 md:mt-36
 "
 >
-  <Preview
-    title={entityJSON.result[0].title}
-    text={entityJSON.result[0].preview}
-    iconFile={entityJSON.result[0].icon}
-    entityType={'project'}
-  />
-  <div class="max-w-3xl">
+  <div class="mr-16">
+    <Preview
+      title={entityJSON.result[0].title}
+      text={entityJSON.result[0].preview}
+      iconFile={entityJSON.result[0].icon}
+      entityType={'project'}
+    />
+  </div>
+  <div>
     <Overview text={entityJSON.result[0].overview} />
     <Jobs jobs={entityJSON.result[0].jobs} />
   </div>

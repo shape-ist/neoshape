@@ -27,6 +27,7 @@ md:text-lg md:leading-snug
     <Button
       href={job.jobAvailability ? job.jobApplicationURL : ''}
       text={job.jobAvailability ? 'Apply For Job' : 'Job Unavailable'}
+      active={job.jobAvailability ? true : false}
       blank="true"
     />
     <p
