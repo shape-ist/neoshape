@@ -34,24 +34,12 @@ export default {
       options: {
         list: [
           {
-            title: 'Brand',
-            value: 'brand',
+            title: 'For-Profit Brand',
+            value: 'for-profit',
           },
           {
-            title: 'Shape Brand',
-            value: 'shapeBrand',
-          },
-          {
-            title: 'Project',
-            value: 'project',
-          },
-          {
-            title: 'Education',
-            value: 'education',
-          },
-          {
-            title: 'Workshop',
-            value: 'workshop',
+            title: 'Non-Profit Project',
+            value: 'non-profit',
           },
         ],
       },
@@ -214,6 +202,28 @@ export default {
       description: 'A social link for the current item',
       name: 'linkedin',
       type: 'url',
+    },
+    {
+      title: 'Extended Button',
+      description:
+        'A button on the bottom of the page that can be used for anything. It is intended to be used as an extension to what the overview section provides. (e.g. Visit site, Learn More etc.)',
+      name: 'extendedBtn',
+      type: 'object',
+      fields: [
+        {
+          title: 'Name',
+          description: 'What should the button say? (e.g. Read More)',
+          type: 'string',
+          name: 'name',
+        },
+        {
+          title: 'URL',
+          description:
+            'The URL the user will be redirected to when they click the button.',
+          type: 'url',
+          name: 'url',
+        },
+      ],
     },
   ],
 };

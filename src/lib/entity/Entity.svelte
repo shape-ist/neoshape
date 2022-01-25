@@ -3,7 +3,16 @@
   import Overview from './src/Overview.svelte';
   import Jobs from './src/Jobs.svelte';
   import Socials from './src/Socials.svelte';
+  import Button from '../../lib/Button.svelte';
   export let entityJSON;
+  let extendedBtn = entityJSON.result[0].extendedBtn;
+  extendedBtn =
+    extendedBtn == undefined
+      ? 'err'
+      : extendedBtn.url == undefined || extendedBtn.name == undefined
+      ? 'err'
+      : extendedBtn;
+  export let eBtn = extendedBtn;
 </script>
 
 <svelte:head>
@@ -32,6 +41,11 @@
     <div>
       <Overview text={entityJSON.result[0].overview} />
       <Jobs jobs={entityJSON.result[0].jobs} />
+      {#if eBtn != 'err'}
+        <div class="mt-16">
+          <Button href={eBtn.url} text={eBtn.name} />
+        </div>
+      {/if}
     </div>
     <Socials data={entityJSON.result[0]} />
   </div>
