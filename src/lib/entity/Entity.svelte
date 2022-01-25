@@ -42,7 +42,7 @@
       <Overview text={entityJSON.result[0].overview} />
       <Jobs jobs={entityJSON.result[0].jobs} />
       {#if eBtn != 'err'}
-        <div class="mt-16">
+        <div class="pt-16">
           <Button href={eBtn.url} text={eBtn.name} />
         </div>
       {/if}

@@ -206,13 +206,13 @@ export default {
     {
       title: 'Extended Button',
       description:
-        'A button on the bottom of the page that can be used for anything. It is intended to be used as an extension to what the overview section provides. (e.g. Visit site, Learn More etc.)',
+        'A button on the bottom of the page that can be used for anything. Intended to be used as an extension to what the overview section provides. (e.g. Visit site, Learn More etc.)',
       name: 'extendedBtn',
       type: 'object',
       fields: [
         {
           title: 'Name',
-          description: 'What should the button say? (e.g. Read More)',
+          description: 'What should the button say? (e.g. Learn More)',
           type: 'string',
           name: 'name',
         },
