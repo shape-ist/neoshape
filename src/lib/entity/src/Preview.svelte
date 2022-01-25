@@ -4,7 +4,8 @@
   export let text;
   export let entityType;
   export let iconFile;
-  import EduMeta from './EduMeta.svelte';
+  export let entityJSON;
+  import Meta from './Meta.svelte';
   import { onMount } from 'svelte';
   import colorMount from './color';
   onMount(() => {
@@ -83,7 +84,7 @@ md:text-left md:px-0 md:pr-4 md:text-md md:leading-snug
   >
     {text}
   </p>
-  <EduMeta />
+  <Meta data={entityJSON} />
 </div>
 
 <style>

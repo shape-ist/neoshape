@@ -1,3 +1,8 @@
+<script>
+  export let key;
+  export let value;
+</script>
+
 <ul class="list-none pt-3">
   <li>
     <p
@@ -11,7 +16,7 @@
         dark:text-white
         "
       >
-        Number of Students
+        {key}
         <span> : </span>
       </b>
       <span
@@ -20,7 +25,7 @@
     dark:text-gray-400
     "
       >
-        14
+        {value}
       </span>
     </p>
   </li>

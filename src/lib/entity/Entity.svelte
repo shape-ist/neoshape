@@ -2,6 +2,7 @@
   import Preview from './src/Preview.svelte';
   import Overview from './src/Overview.svelte';
   import Jobs from './src/Jobs.svelte';
+  import Socials from './src/Socials.svelte';
   export let entityJSON;
 </script>
 
@@ -24,10 +25,14 @@
       text={entityJSON.result[0].preview}
       iconFile={entityJSON.result[0].icon}
       entityType={'project'}
+      {entityJSON}
     />
   </div>
-  <div>
-    <Overview text={entityJSON.result[0].overview} />
-    <Jobs jobs={entityJSON.result[0].jobs} />
+  <div class="flex flex-row">
+    <div>
+      <Overview text={entityJSON.result[0].overview} />
+      <Jobs jobs={entityJSON.result[0].jobs} />
+    </div>
+    <Socials data={entityJSON.result[0]} />
   </div>
 </div>
