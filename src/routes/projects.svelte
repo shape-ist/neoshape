@@ -1,3 +1,20 @@
-<script>
-  // *[_type == 'project' && entityType != "shapeBrand"]
+<script context="module">
+  import EntityList from '@lib/entityList/EntityList.svelte';
+  import { queryContent } from '@lib/helpers/sanity';
+  export const load = async () => {
+    let entities = await queryContent(
+      "*[_type == 'project' && entityType == 'non-profit']"
+    );
+    return {
+      props: {
+        entities,
+      },
+    };
+  };
 </script>
+
+<script>
+  export let entities;
+</script>
+
+<EntityList data={entities.result} title="Non-Profit Brands" />
