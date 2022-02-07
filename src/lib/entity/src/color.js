@@ -1,5 +1,5 @@
 export function getAverageRGB(imgEl) {
-  var blockSize = 5, // only visit every 5 pixels
+  var blockSize = 10, // only visit every 5 pixels
     defaultRGB = {
       r: 0,
       g: 0,

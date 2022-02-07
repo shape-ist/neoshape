@@ -17,7 +17,7 @@ export async function fetchSanityAPI(url) {
 export async function queryContent(q, dataset = defaultDataset) {
   let query = encodeURIComponent(q);
   return await fetchSanityAPI(`
-    https://${project}.apicdn.sanity.io/v1/data/query/${dataset}?query=${query}
+    https://${project}.api.sanity.io/v1/data/query/${dataset}?query=${query}
     `);
 }
 

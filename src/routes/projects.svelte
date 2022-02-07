@@ -17,4 +17,4 @@
   export let entities;
 </script>
 
-<EntityList data={entities.result} title="Non-Profit Brands" />
+<EntityList data={entities.result} title="Non-Profit Projects" />

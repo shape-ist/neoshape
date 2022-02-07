@@ -8,8 +8,10 @@
 
 <div
   class="
-flex flex-col justify-between items-center mt-48
-md:flex-row"
+flex flex-col justify-between items-center
+md:flex-row
+md:px-20
+"
 >
   <div class="max-w-xl">
     <h1
@@ -24,7 +26,6 @@ md:flex-row"
     <p
       class="
 		mb-8 leading-snug text-xl
-		md:mr-32
 		dark:text-gray-200
 		"
     >
