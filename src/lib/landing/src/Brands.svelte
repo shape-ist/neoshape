@@ -25,12 +25,13 @@ md:px-20
 		dark:text-gray-200
 		"
     >
-      We provide a supportive learning environment for high school students who
-      want to improve themselves. We offer a large selection of courses from
-      arts, technology and academics. Our courses will be aimed to acknowledge
-      our members’ devotion to better themselves and value their willingness to
-      take initiative regardless of their status. We invite everyone who desires
-      a better tomorrow to join and shape the future with us!
+      At Shape, we believe that every piece of information is profitable if
+      realized through action. Thus, we provide our members with working
+      opportunities to use their creative knowledge in our startups. Since we
+      believe that every industry needs a little bit more a Shape Flare, we make
+      sure that we are involved in and improve every industry we can:
+      journalism, marketing, and even fashion… To learn more about our startups
+      and income streams click the button below.
     </p>
     <Button text="See details" href="/brands" />
   </div>

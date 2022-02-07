@@ -64,9 +64,9 @@ export default {
         'Short information about the project, this will be displayed in the projects page as a shorter description of the project. Make sure it is eye-catching and intriguing. This field is ideally a shorter description (see below) or just the introduction of the below field.',
       validation: (Rule) =>
         Rule.required()
-          .min(200)
-          .error('The project preview must be between 200 and 400 characters.')
-          .max(400),
+          .min(150)
+          .error('The project preview must be between 150 and 200 characters.')
+          .max(200),
     },
     {
       title: 'Project Overview',
@@ -78,7 +78,7 @@ export default {
         Rule.required()
           .min(500)
           .error('Project overview should be at least 500 characters long.')
-          .max(10000),
+          .max(9999),
     },
     {
       title: 'Jobs',

@@ -29,14 +29,12 @@ md:px-20
 		dark:text-gray-200
 		"
     >
-      After completing our courses, we provide our members with promising
-      opportunities to apply their knowledge and expertise to real life as we
-      offer them a chance to join one of Shape’s many projects. Our projects
-      include start-ups, research projects and even online art shows by our
-      artist community! Our selection method to picking members who will
-      contribute to our projects rely solely on their dedication to self-improve
-      as we strongly believe that passionate individuals create devout
-      communities who can change the world!
+      While we believe that knowledge is profitable, not all of our motivation
+      lies in money. We advocate that through empathy and kind-hearted action,
+      the world can become a much more livable and enjoyable place. Whether from
+      raising seaweeds in the Marmara Sea to prevent climate change or providing
+      pro-bono counseling to high school students through their university
+      entrance journeys, we are here to spread joy.
     </p>
     <Button text="Explore Projects" href="/projects" />
   </div>
